@@ -1,14 +1,9 @@
 body {
-    background-color: yellowgreen;
+    background-color: white;
 }
 
 .jumbotron h1 {
-    color: blue;
-}
-
-.jumbotron {
-    padding-top: 0;
-    background-color: transparent !important;
+    color: black;
 }
 
 img {
@@ -17,5 +12,5 @@ img {
 }
 
 .submitFont {
-    color: whitesmoke;
+    color: grey;
 }

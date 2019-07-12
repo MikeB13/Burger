@@ -1,4 +1,3 @@
-//Import (require) connection.js into orm.js
 var connection = require('../config/connection.js')
 
 var orm = {
@@ -19,7 +18,6 @@ var orm = {
         });
     },
 
-    //updateOne()
     updateOne: function(burgerID, callback) {
         connection.query('UPDATE burgers SET ? WHERE ?', [{ devoured: true }, { id: burgerID }],
             function(err, result) {
@@ -29,5 +27,4 @@ var orm = {
     }
 };
 
-// Export the ORM object in module.exports.
 module.exports = orm;

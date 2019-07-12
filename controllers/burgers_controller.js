@@ -15,19 +15,19 @@ router.get('/index', function(req, res) {
     });
 });
 
-// Create a New Burger
+// Create
 router.post('/burger/create', function(req, res) {
     burger.insertOne(req.body.burger_name, function() {
         res.redirect('/index');
     });
 });
 
-// Devour a Burger
+// Devour
 router.post('/burger/eat/:id', function(req, res) {
     burger.updateOne(req.params.id, function() {
         res.redirect('/index');
     });
 });
 
-// Export routes
+
 module.exports = router;
